@@ -15,11 +15,6 @@ class NorthwindRepository:
     def update_price_for_product(self, id: int, price: float):
         self.product_dao.update_price_for_product(id, price)
         # self.product_dao.update_company_books(??)
-        try:
-            ...
-        except:
-            ...
-        finally:
 
 repo = NorthwindRepository(conn_info="dbname=northwind user=postgres password=postgres")
 # repo.update_price_for_product(1, 20)
